@@ -4,7 +4,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        message = "Good bye to you all"
+        message = "Good morning to you all"
         self.wfile.write(bytes(message, "utf8"))
         return
 def run():
